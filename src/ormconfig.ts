@@ -17,7 +17,7 @@ const config: ConnectionOptions = {
   password: connectionOptions.password,
   database: connectionOptions.database,
   extra: {
-    ssl: false, //true for hosting.-test-mode
+    ssl: true, //true for hosting.-test-mode
   },
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
 
