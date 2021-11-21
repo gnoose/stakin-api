@@ -16,6 +16,9 @@ const config: ConnectionOptions = {
   username: connectionOptions.user,
   password: connectionOptions.password,
   database: connectionOptions.database,
+  extra: {
+    ssl: true, //true for hosting.-test-mode
+  },
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
 
   // We are using migrations, synchronize should be set to false.
